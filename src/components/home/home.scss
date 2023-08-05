@@ -1,0 +1,90 @@
+
+.home-wrapper{
+
+    .title{
+        display: flex;
+        justify-content: space-between;
+        font-weight: bolder;
+        align-items: center;
+        #cat{
+            display: flex;
+            align-items: center;
+        }
+    }
+
+    .header{
+        height: 35px;
+        margin-bottom: 1rem;
+        display: flex;
+        align-items: center;
+        box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
+        padding: 0 1rem;
+    }
+
+    .totl-item{
+        height: 50px;
+        margin: 0 1rem;
+        .total-number{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bolder;
+        }
+
+
+    }
+
+    .grid-item{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 0.5rem;
+        margin:1rem;
+        .grid-import, .grid-export{
+            height: 100px;
+        }
+    }
+
+    .catgory-tem{
+        margin: 1rem;
+        height: 195px;
+        .cat-list{
+          
+            height: 150px;
+            overflow: auto;
+            margin-top: 10px;
+            .cat-item{
+                height: 30px;
+                display: grid;
+                grid-template-columns: 30px 1fr 1fr;
+                align-items: center;
+                border-bottom: 1px solid gainsboro;
+                .color{
+                    height: 20px;
+                    width: 20px;
+                    background: #000;
+                    border-radius: 4px;
+                }
+                .price{
+                    text-align: end;
+                }
+            }
+        }
+    }
+
+}
+
+.import{
+    color: #3880ff;
+}
+
+.export{
+    color: #ff4747;
+}
+
+.bg-import{
+    background: #3880ff;
+}
+
+.bg-export{
+    background: #ff4747;
+}
