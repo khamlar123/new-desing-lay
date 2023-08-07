@@ -1,5 +1,6 @@
 
 import './home.scss';
+import moneyIcon from './money.png'
 
 
 function Home() {
@@ -15,7 +16,10 @@ function Home() {
 
             <div className='totl-item card'>
                 <div className='title'>
-                    <label>Total</label>
+                    <label>
+                        <img src={moneyIcon} alt="my image" />
+                        ຍອດເງີນທັງໝົດ
+                    </label>
                     <span className="material-symbols-outlined">
                         chevron_right
                     </span>
@@ -26,17 +30,53 @@ function Home() {
             </div>
 
             <div className='grid-item'>
-                <div className='grid-import card'>
-                    grid-import
+                <div className='grid-import card bg-import'>
+                    <div className='coulmn'>
+                        <div className='grid-title'>
+                            ລາຍຮັບ
+                            <span>10000</span>
+                        </div>
+
+                        <div className='grid-ctn'>
+                            ລາຍຮັບ
+                            <span>10000</span>
+                        </div>
+
+                    </div>
+                    <div className='coulmn'>
+                        <div className='persent'>
+                            <div className='persent-item bg-import'>
+                            60%
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                <div className='grid-export card'>
-                    grid-import
+                <div className='grid-export card bg-export'>
+                <div className='coulmn'>
+                        <div className='grid-title'>
+                            ລາຍຮັບ
+                            <span>10000</span>
+                        </div>
+
+                        <div className='grid-ctn'>
+                            ລາຍຮັບ
+                            <span>10000</span>
+                        </div>
+
+                    </div>
+                    <div className='coulmn'>
+                        <div className='persent'>
+                            <div className='persent-item bg-export'>
+                                60%
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
 
             <div className='totl-item card'>
                 <div className='title'>
-                    <label>Plan</label>
+                    <label>ແຜນການຈ່າຍ</label>
                     <span className="material-symbols-outlined">
                         chevron_right
                     </span>
@@ -52,7 +92,7 @@ function Home() {
                         <span className="material-symbols-outlined">
                             grid_view
                         </span>
-                        Catgory
+                        ປະເພດ
                     </label>
                     <span className="material-symbols-outlined">
                         chevron_right
@@ -77,6 +117,11 @@ function Home() {
                     
                 </div>
 
+            </div>
+
+            <div className='btn-item'>
+                <button className='bg-import'>ຮັບ</button>
+                <button className='bg-export'>ຈ່າຍ</button>
             </div>
 
         </div>

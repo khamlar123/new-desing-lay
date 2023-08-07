@@ -6,6 +6,15 @@
         justify-content: space-between;
         font-weight: bolder;
         align-items: center;
+        label{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        img{
+            width: 25px;
+            height: 25px;
+        }
         #cat{
             display: flex;
             align-items: center;
@@ -14,7 +23,7 @@
 
     .header{
         height: 35px;
-        margin-bottom: 1rem;
+        margin-bottom: 0.5rem;
         display: flex;
         align-items: center;
         box-shadow: rgba(0, 0, 0, 0.04) 0px 3px 5px;
@@ -29,27 +38,64 @@
             align-items: center;
             justify-content: center;
             font-weight: bolder;
+            font-size: 25px;
         }
-
-
     }
 
     .grid-item{
         display: grid;
         grid-template-columns: 1fr 1fr;
         gap: 0.5rem;
-        margin:1rem;
+        margin: 0.5rem 1rem;
         .grid-import, .grid-export{
             height: 100px;
+            display: grid;
+            grid-template-columns: 80% 20%;
+            .grid-title{
+                display: flex;
+                flex-direction: column;
+                font-size: 14px;
+
+            }
+
+            .grid-ctn{
+                display: flex;
+                height: 50px;
+                font-size: 12px;
+                flex-direction: column;
+                justify-content: flex-end;
+            }
+
+            .coulmn{
+                .persent{
+                    height: 100%;
+                    border: 1px solid white;
+                    border-radius: 50px;
+                    padding: 1px;
+                    background: white;
+                    display: flex;
+                    align-items: flex-end;
+                }
+                .persent-item{
+                    height: 60%;
+                    border-radius: 50px;
+                    font-size: 10px;
+                    display: flex;
+                    padding-top: 0.5rem;
+                    width: 100%;
+                    justify-content: center;
+                }
+            }
         }
+
+
     }
 
     .catgory-tem{
-        margin: 1rem;
-        height: 195px;
+        margin: 0.5rem 1rem;
+        height: 170px;
         .cat-list{
-          
-            height: 150px;
+            height: 140px;
             overflow: auto;
             margin-top: 10px;
             .cat-item{
@@ -68,6 +114,21 @@
                     text-align: end;
                 }
             }
+        }
+    }
+
+    .btn-item{
+        gap: 0.5rem;
+        display: flex;
+        margin: 0 1rem;
+        button{
+            height: 50px;
+            width: 100%;
+            border-radius: 8px;
+            border: none;
+            outline: none;
+            font-size: 30px;
+
         }
     }
 
